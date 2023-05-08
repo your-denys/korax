@@ -153,6 +153,9 @@
       opacity: 0;
      height: 260px;
     }
+    60% {
+      opacity: 0;  
+}
     80% {
       opacity: 1;
     }
@@ -160,15 +163,16 @@
   @keyframes text-hide {
     0% {
       opacity: 1;
-     height: 160px;
+     height: 260px;
     }
   
     20% {
       opacity: 0;
-      max-height: 260px;
+      height: 260px;
     }
+
     100% {
-      max-height: 160px;
+      height: 160px;
     }
   }
   .roadmap-text-footer {
