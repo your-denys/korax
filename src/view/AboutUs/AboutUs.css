@@ -1,8 +1,16 @@
-/* @media screen and (min-width: 769px) { */
+@media screen and (min-width: 769px) {
     .aboutUs-page{
         margin-top: 80px;
         position: relative;
         width: 100vw;
         height: 100vh;
     }
-/* }  */
+} 
+@media screen and (max-width: 768px) {
+    .aboutUs-page{
+        margin-top: 80px;
+        position: relative;
+        width: 100vw;
+        height: 100%;
+    }
+} 
