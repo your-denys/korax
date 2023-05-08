@@ -131,11 +131,11 @@
     animation: text-hide 1s;
     /* display: none; */
   }
-  .card-item:focus {
+  .card-item:hover {
     height: 260px;
     outline: none;
   }
-  .card-item:focus p {
+  .card-item:hover p {
     /* display: block; */
     opacity: 1;
     max-width: 260px;
