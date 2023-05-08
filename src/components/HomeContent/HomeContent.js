@@ -25,6 +25,7 @@ const HomeContent = () => {
         <video
           className="video"
           autoPlay
+          playsInline
           muted
           loop
           src={video}
