@@ -162,6 +162,9 @@ canvas {
     font-size: 32px;
     line-height: 25px;
   }
+  .services-description {
+  margin-bottom:50px;
+}
   .services-arrow {
     width: 100px;
   }
