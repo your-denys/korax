@@ -127,7 +127,7 @@
     text-align: left;
     transition: all 1s ease-out;
     opacity: 0;
-    animation: text-hide 1s;
+    animation: text-hide 0.5s;
     /* display: none; */
   }
   .card-item:hover {
@@ -139,7 +139,7 @@
     opacity: 1;
     max-width: 260px;
     height: auto;
-    animation: text 1s;
+    animation: text 0.5s;
     outline: none;
   }
   @keyframes text {
@@ -151,12 +151,12 @@
     }
 
     50% {
-      opacity: 0;
+      opacity: 0.5;
       height: 260px;
        width: 100%; 
     }
     90% {
-      opacity: 0;
+      opacity: 0.9;
  
     }
     100% {
@@ -172,13 +172,14 @@
     }
 
     20% {
-      opacity: 0;
+      opacity: 0.8;
       height: 260px;
     width: 100%; 
   
     }
 
     100% {
+      opacity:0;
       height: 160px;
       max-width: 260px;
   
