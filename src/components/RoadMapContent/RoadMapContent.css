@@ -101,6 +101,10 @@
     border-radius: 27px;
 
   }
+   .card-item p {
+
+    max-width: 200px;
+  }
   .roadmap-text-footer {
     padding-top: 100px;
   }
