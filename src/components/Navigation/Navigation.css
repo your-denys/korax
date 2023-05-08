@@ -1,0 +1,30 @@
+.navigation {
+    position: absolute;
+    top: 30%;
+    left: 3%;
+}
+.me-auto {
+  flex-direction: column;
+  align-items: flex-start;
+  border-left: 2px solid #fff;
+  padding-left: 20px;
+ 
+
+}
+.navigation .nav-link {
+  font-weight: 300;
+  font-size: 18px;
+  color: #ffffff;
+  padding: 2px 0;
+  transition: all 0.5s;
+}
+.navigation .nav-link:hover {
+    color: #b8b8b8;
+    padding-left: 4px;
+    /* transform: scale(1.05); */
+}
+@media screen and (max-width: 768px) {
+    .me-auto {
+        display: none !important;
+    }
+}

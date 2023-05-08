@@ -1,0 +1,19 @@
+/* .nav {
+} */
+.nav-wrapper {
+    margin-top: 40px;
+    display:  flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.button-log-in {
+    font-size: 20px;
+    font-weight: 300;
+    transition: all 0.3s;
+}
+.button-log-in:hover  {
+    color: #b8b8b8;
+}
+.nav-wrapper img { 
+    width: 130px;
+}

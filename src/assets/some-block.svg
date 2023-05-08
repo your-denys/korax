@@ -1,0 +1,28 @@
+<svg width="305" height="441" viewBox="0 0 305 441" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="17" cy="17" r="16" stroke="white" stroke-width="2"/>
+<circle cx="17" cy="313" r="16" stroke="white" stroke-width="2"/>
+<circle cx="17" cy="165" r="16" stroke="white" stroke-width="2"/>
+<circle cx="17" cy="91" r="16" stroke="white" stroke-width="2"/>
+<circle cx="17" cy="387" r="16" stroke="white" stroke-width="2"/>
+<circle cx="17" cy="239" r="16" stroke="white" stroke-width="2"/>
+<circle cx="17" cy="54" r="16" stroke="white" stroke-width="2"/>
+<circle cx="17" cy="350" r="16" stroke="white" stroke-width="2"/>
+<circle cx="17" cy="202" r="16" stroke="white" stroke-width="2"/>
+<circle cx="17" cy="128" r="16" stroke="white" stroke-width="2"/>
+<circle cx="17" cy="424" r="16" stroke="white" stroke-width="2"/>
+<circle cx="17" cy="276" r="16" stroke="white" stroke-width="2"/>
+<circle cx="253" cy="220" r="16" stroke="white" stroke-width="2"/>
+<line x1="33.8224" y1="423.824" x2="235.822" y2="219.824" stroke="white" stroke-opacity="0.4" stroke-width="0.5"/>
+<line x1="33.8407" y1="386.807" x2="235.841" y2="219.807" stroke="white" stroke-opacity="0.4" stroke-width="0.5"/>
+<line x1="33.8652" y1="349.789" x2="236.865" y2="219.789" stroke="white" stroke-opacity="0.4" stroke-width="0.5"/>
+<line x1="33.8954" y1="312.773" x2="235.895" y2="219.773" stroke="white" stroke-opacity="0.4" stroke-width="0.5"/>
+<line x1="33.9332" y1="275.759" x2="235.933" y2="219.759" stroke="white" stroke-opacity="0.4" stroke-width="0.5"/>
+<line x1="33.9766" y1="238.751" x2="235.977" y2="219.751" stroke="white" stroke-opacity="0.4" stroke-width="0.5"/>
+<line x1="34.0221" y1="201.751" x2="237.022" y2="219.751" stroke="white" stroke-opacity="0.4" stroke-width="0.5"/>
+<line x1="34.0657" y1="164.759" x2="236.066" y2="219.759" stroke="white" stroke-opacity="0.4" stroke-width="0.5"/>
+<line x1="34.1036" y1="127.772" x2="236.104" y2="219.772" stroke="white" stroke-opacity="0.4" stroke-width="0.5"/>
+<line x1="33.1341" y1="90.789" x2="236.134" y2="219.789" stroke="white" stroke-opacity="0.4" stroke-width="0.5"/>
+<line x1="33.1565" y1="56.8051" x2="236.157" y2="219.805" stroke="white" stroke-opacity="0.4" stroke-width="0.5"/>
+<line x1="34.1776" y1="16.8241" x2="235.178" y2="219.824" stroke="#11CC87" stroke-width="0.5"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M303.004 3H236V2H304.007V3H304.004V438.221H303.004V3ZM304.007 440.846H236V439.846H304.007V440.846Z" fill="white"/>
+</svg>

@@ -1,0 +1,62 @@
+.modal-content {
+  background-color: #161616 !important;
+  padding: 0 40px;
+  width: 70% !important;
+  margin: 0 auto;
+}
+.modal-header {
+  margin: 0 auto;
+  border: none !important;
+  padding-bottom: 30px !important;
+}
+.modal-title {
+  color: white;
+  font-size: 4rem !important;
+  font-weight: 600 !important;
+}
+.modal-body {
+  border-top: 2px dashed #b8b8b8 !important;
+  border-bottom: none !important;
+}
+.modal-body form {
+    margin-top: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+ label {
+  font-family: 'Consolas';
+  font-weight: 400;
+  font-size: 16px;
+  color: #b8b8b8;
+}
+.input {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  padding: 15px;
+  border-bottom: 1px solid #ffffff;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.modal-footer {
+  border: none !important;
+  padding: 0 0 30px !important;
+  justify-content: space-between !important;
+}
+.modal-footer button {
+  font-weight: 400;
+  font-size: 20px;
+}
+@media screen and (max-width: 567px) {
+    .modal-content {
+        width: 90% !important;
+    }
+    .modal-title {
+        font-size: 3rem !important;
+    }
+    .modal-footer button {
+        font-size: 25px;
+      }
+}

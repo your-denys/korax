@@ -1,0 +1,84 @@
+.contact-us-title {
+  font-weight: 600;
+  font-size: 200px;
+  line-height: 120.6%;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-bottom: 2px dashed #b8b8b8;
+  padding-bottom: 30px;
+  margin-bottom: 150px;
+  text-align: center;
+}
+.contact-us-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+}
+.contact-us-form .input-wrapper {
+  width: calc(50% - 3%);
+}
+.contact-us-form .input-wrapper label,
+.contact-us-form .input-wrapper input {
+  width: 100%;
+}
+.contact-us-button {
+  margin-left: auto;
+  padding: 15px 30px;
+  border: 1px solid #ffffff;
+  border-radius: 31px;
+  transition: all 0.5s;
+}
+.contact-us-button:hover {
+  margin-left: auto;
+  padding: 15px 30px;
+  border: 1px solid #ffffff;
+  border-radius: 31px;
+  background-color: #ffffff;
+  color: #161616;
+}
+.contact-us-form .input-wrapper:nth-of-type(1) {
+  margin-right: auto;
+}
+.contact-us-form .input-wrapper:nth-of-type(2) {
+  margin-left: auto;
+}
+.contact-us-form .input-wrapper:nth-of-type(3) {
+  margin-right: auto;
+}
+.contact-us-form .input-wrapper:nth-of-type(4) {
+  margin-left: auto;
+}
+
+
+
+@media screen and (max-width: 1399px) {
+  .contact-us-title {
+    font-size: 150px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .contact-us-title {
+    font-size: 100px;
+  }
+  .contact-us-form .input-wrapper {
+    width: calc(50% - 5%);
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact-us-title {
+    font-size: 48px;
+    line-height: 54px;
+  }
+  .contact-us-form .input-wrapper {
+    width: 100%;
+  }
+  .contact-us-form {
+
+    gap: 10px;
+  }
+  .contact-us-button {
+    margin-left: 0;
+
+  }
+}

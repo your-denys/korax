@@ -1,0 +1,178 @@
+.roadmap {
+  padding-bottom: 50px ;
+}
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  justify-content: center;
+  transition: all 1s ease-out;
+}
+.card-item {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  height: 353px;
+  padding: 55px 20px;
+  border-radius: 27px;
+  overflow: hidden;
+  transition: all 1s ease-out;
+  outline: none;
+}
+.card-item span {
+  font-family: 'KulimPark';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 73px;
+  color: #fff;
+  margin-bottom: 13px;
+}
+.card-item h2 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.card-item p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  max-width: 60px;
+  line-height: 18px;
+  text-align: left;
+  transition: all 1s ease-out;
+  opacity: 0;
+  animation: text-hide 1s;
+  /* display: none; */
+}
+.card-item:hover p {
+  /* display: block; */
+  opacity: 1;
+  max-width: 300px;
+  height: auto;
+  animation: text 1s;
+}
+@keyframes text {
+  0% {
+    opacity: 0;
+    max-width: 60px;
+  }
+
+  50% {
+    opacity: 0;
+    max-width: 300px;
+  }
+  80% {
+    opacity: 1;
+  }
+}
+@keyframes text-hide {
+  0% {
+    opacity: 1;
+    max-width: 300px;
+  }
+
+  20% {
+    opacity: 0;
+    max-width: 300px;
+  }
+  100% {
+    max-width: 60px;
+  }
+}
+
+.roadmap-text-footer {
+  color: #161616;
+  padding-top: 100px;
+  width: 260px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+}
+@media screen and (max-width: 1280px) {
+  .card-wrapper {
+    margin-top: 30px;
+  }
+  .card-item {
+    height: 300px;
+    padding: 25px 20px;
+    border-radius: 27px;
+
+  }
+  .roadmap-text-footer {
+    padding-top: 100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card-wrapper {
+    margin-top: 30px; 
+  }
+  .card-item {
+    height: 160px;
+    padding:  20px;
+    width: 300px;
+    overflow: hidden;
+  }
+  .card-item h2 {
+   
+    margin-bottom: 20px;
+  }
+  .card-item p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    max-width: 60px;
+    line-height: 18px;
+    text-align: left;
+    transition: all 1s ease-out;
+    opacity: 0;
+    animation: text-hide 1s;
+    /* display: none; */
+  }
+  .card-item:focus {
+    height: 260px;
+    outline: none;
+  }
+  .card-item:focus p {
+    /* display: block; */
+    opacity: 1;
+    max-width: 260px;
+    height: auto;
+    animation: text 1s;
+    outline: none;
+  }
+  @keyframes text {
+    0% {
+      opacity: 0;
+      max-width: 60px;
+    }
+  
+    50% {
+      opacity: 0;
+      max-width: 260px;
+    }
+    80% {
+      opacity: 1;
+    }
+  }
+  @keyframes text-hide {
+    0% {
+      opacity: 1;
+      max-width: 260px;
+    }
+  
+    20% {
+      opacity: 0;
+      max-width: 260px;
+    }
+    100% {
+      max-width: 60px;
+    }
+  }
+  .roadmap-text-footer {
+    padding-top: 50px;
+  }
+}
+@media screen and (max-height: 991px) {}
