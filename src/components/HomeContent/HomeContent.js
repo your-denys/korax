@@ -22,15 +22,15 @@ const HomeContent = () => {
         </Nav.Link>
       </article>
       <article className="wrapper-video">
-        <video
-          className="video"
-          autoPlay
-          playsInline
-          muted
-          loop
-          src={video}
-          type="video/mp4"
-        />
+    <video
+  className="video"
+  autoPlay
+  muted
+  loop
+  src={video}
+  type="video/mp4"
+  playsInline
+/>
       </article>
     </section>
   );
