@@ -153,6 +153,7 @@
     50% {
       opacity: 0;
       height: 260px;
+      width:100%
 
     }
     90% {
@@ -173,7 +174,7 @@
     20% {
       opacity: 0;
       height: 260px;
-  
+       width:0
     }
 
     100% {
