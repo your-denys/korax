@@ -9,7 +9,7 @@ import RoadMap from './view/RoadMap/RoadMap';
 import Projects from './view/Projects/Projects';
 import ContactUs from './view/ContactUs/ContactUs';
 
-function App() {
+function useBlockRefs() {
   const blocksRefs = [
     useRef(null),
     useRef(null),
@@ -19,6 +19,12 @@ function App() {
     useRef(null),
     useRef(null),
   ];
+  
+  return blocksRefs;
+}
+
+function App() {
+  const blocksRefs = useBlockRefs();
   const observerRef = useRef(null);
   const [activeBlockIndex, setActiveBlockIndex] = useState(0);
 

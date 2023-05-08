@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import logo from '../../assets/Korax.svg';
 
 const Footer = () => {
   return (
