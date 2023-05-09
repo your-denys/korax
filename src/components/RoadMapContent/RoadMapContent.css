@@ -79,7 +79,7 @@
     max-width: 300px;
   }
   100% {
-    max-width: 60px;
+    max-width: 260px;
   }
 }
 
@@ -108,6 +108,42 @@
   .roadmap-text-footer {
     padding-top: 100px;
   }
+  .card-item p {
+  max-width: 60px;
+}
+.card-item:focus p {
+
+  max-width: 260px;
+
+}
+@keyframes text {
+  0% {
+    opacity: 0;
+    max-width: 60px;
+  }
+
+  50% {
+    opacity: 0;
+    max-width: 260px;
+  }
+  80% {
+    opacity: 1;
+  }
+}
+@keyframes text-hide {
+  0% {
+    opacity: 1;
+    max-width: 260px;
+  }
+
+  20% {
+    opacity: 0;
+    max-width: 260px;
+  }
+  100% {
+    max-width: 60px;
+  }
+}
 }
 @media screen and (max-width: 768px) {
   .card-wrapper {
