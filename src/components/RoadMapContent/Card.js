@@ -4,7 +4,7 @@ const Card = () => {
     
   return (
     <article className='card-wrapper'>
-      <button autoFocus className='card-item' style={{backgroundColor: '#59575A'}}>
+      <button className='card-item' style={{backgroundColor: '#59575A'}}>
         <span>01</span>
         <h2>Lorem, ipsum</h2>
         <p >
