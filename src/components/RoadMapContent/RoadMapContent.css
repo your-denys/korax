@@ -47,7 +47,7 @@
   animation: text-hide 1s;
   /* display: none; */
 }
-.card-item:hover p {
+.card-item:focus p {
   /* display: block; */
   opacity: 1;
   max-width: 300px;
