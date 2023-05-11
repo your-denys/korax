@@ -24,7 +24,7 @@ const ProjectsContent = () => {
       <article className="projects-wrapper pt-5">
         <motion.div
          viewport={{ once: true }}
-          initial={{ x: -300, y: 300, scale: 0.7 }}
+          initial={{ x: -200, y: 200, scale: 0.7 }}
           whileInView={{ x: 0, scale: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           className="projects-card card-1"
@@ -35,7 +35,7 @@ const ProjectsContent = () => {
         </motion.div>
         <motion.div
          viewport={{once: true }}
-          initial={{ x: 300, y: 300, scale: 0.7 }}
+          initial={{ x: 200, y: 200, scale: 0.7 }}
           whileInView={{ x: 0, scale: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           className="projects-card card-2"
@@ -46,7 +46,7 @@ const ProjectsContent = () => {
         </motion.div>
         <motion.div
          viewport={{once: true }}
-          initial={{ x: -300, y: 300, scale: 0.7 }}
+          initial={{ x: -200, y: 200, scale: 0.7 }}
           whileInView={{ x: 0, scale: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           className="projects-card card-3"
@@ -57,7 +57,7 @@ const ProjectsContent = () => {
         </motion.div>
         <motion.div
          viewport={{once: true }}
-          initial={{ x: 300, y: 300, scale: 0.7 }}
+          initial={{ x: 200, y: 200, scale: 0.7 }}
           whileInView={{ x: 0, scale: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           className="projects-card card-4"
