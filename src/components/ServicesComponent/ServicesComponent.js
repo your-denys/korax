@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const ServicesComponent = () => {
   return (
-    <motion.div
+<motion.div
       // variants={contactAnimation}
       initial={{opacity:0}}
       whileInView={{opacity:1}}
@@ -15,7 +15,7 @@ const ServicesComponent = () => {
         <section className="services-content">
           <article className="services-main">
             <motion.h2
-            // viewport={{ amount: 0.4, once: false }}
+            viewport={{  once: true }}
               initial={{ x: -200, opacity: 0 }}
               whileInView={{ x:0,opacity:1}}
               transition={{ duration: 0.5 }}
@@ -24,8 +24,8 @@ const ServicesComponent = () => {
               SERVICES
             </motion.h2>
             <motion.img
-            //  viewport={{ amount: 0.4, once: false }}
-              initial={{ x: 200, opacity: 0 }}
+             viewport={{  once: true }}
+              initial={{ x: 100, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.5 }}
               className="services-arrow"
@@ -35,7 +35,7 @@ const ServicesComponent = () => {
           </article>
           <article className="services-description">
             <motion.p
-            viewport={{ amount: 0.4, once: false }}
+            viewport={{ amount: 0.4, once: true }}
               initial={{ x: 200, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ delay: 0.2, duration: 0.5 }}
@@ -44,7 +44,7 @@ const ServicesComponent = () => {
               *Lorem ipsum
             </motion.p>
             <motion.p
-             viewport={{ amount: 0.4, once: false }}
+             viewport={{ amount: 0.4, once: true }}
               initial={{ x: 200, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ delay: 0.2, duration: 0.5 }}
@@ -52,10 +52,11 @@ const ServicesComponent = () => {
               *Lorem ipsum
             </motion.p>
             <motion.p
+            
               initial={{ x: 200, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ delay: 0.2, duration: 0.5 }}
-              viewport={{ amount: 0.4, once: false }}
+              viewport={{ amount: 0.4, once: true }}
             >
               *Lorem ipsum
             </motion.p>
@@ -63,12 +64,13 @@ const ServicesComponent = () => {
               initial={{ x: 200, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ delay: 0.2, duration: 0.5 }}
-              viewport={{ amount: 0.4, once: false }}
+              viewport={{ amount: 0.4, once: true }}
             >
               *Lorem ipsum
             </motion.p>
           </article>
         </section>
+        {/* <Drag /> */}
       </div>
     </motion.div>
   );
