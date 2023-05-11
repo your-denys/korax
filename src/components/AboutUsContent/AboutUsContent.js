@@ -7,6 +7,7 @@ const AboutUsContent = () => {
     <section className='about-us'>
       <p className="blocks-title">About us</p>
       <motion.h2
+        viewport={{ amount: 0.3, once: true }}
         initial={{ y: 60, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.3, duration: 0.6 }}
@@ -15,12 +16,14 @@ const AboutUsContent = () => {
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       </motion.h2>
       <motion.span
+        viewport={{ once: true }}
         initial={{ width: 0 }}
         whileInView={{ width: '100%' }}
         transition={{ duration: 0.7 }}
         className="border-dashed"
       ></motion.span>
       <motion.article
+        viewport={{ once: true }}
         initial={{ x: 100, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ delay: 0.2, duration: 0.6 }}
