@@ -28,7 +28,7 @@ function App() {
   const observerRef = useRef(null);
   const [activeBlockIndex, setActiveBlockIndex] = useState(0);
 
-  useEffect(() => {
+   useEffect(() => {
     observerRef.current = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -40,12 +40,12 @@ function App() {
             window.history.replaceState(
               null,
               null,
-              `#${entry.target.id}`
+              null
             );
           }
         });
       },
-      { threshold: 0.5 } 
+      { threshold: 0.5 }
     );
 
     blocksRefs.forEach((ref) =>
