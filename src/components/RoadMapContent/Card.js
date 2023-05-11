@@ -6,9 +6,9 @@ const Card = () => {
     <motion.article className="card-wrapper">
       <motion.button
         viewport={{once:true}}
-        initial={{ x: -200, y: 200, scale: 0.7 }}
+        initial={{ x: -200, y: 100, scale: 0.7 }}
         whileInView={{ x: 0, scale: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.4 }}
         className="card-item"
         style={{ backgroundColor: '#59575A' }}
       >
@@ -22,9 +22,9 @@ const Card = () => {
       </motion.button>
       <motion.button
         viewport={{once:true}}
-        initial={{ x: -200, y: 200, scale: 0.7 }}
+        initial={{ x: -200, y: 100, scale: 0.7 }}
         whileInView={{ x: 0, scale: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.4 }}
         className="card-item"
         style={{ backgroundColor: '#0A080B' }}
       >
@@ -38,9 +38,9 @@ const Card = () => {
       </motion.button>
       <motion.button
         viewport={{once:true}}
-        initial={{ x: -200, y: 200, scale: 0.7 }}
+        initial={{ x: -200, y: 100, scale: 0.7 }}
         whileInView={{ x: 0, scale: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.4 }}
         className="card-item"
         style={{ backgroundColor: '#06593B' }}
       >
@@ -54,9 +54,9 @@ const Card = () => {
       </motion.button>
       <motion.button
         viewport={{once:true}}
-        initial={{ x: -200, y: 200, scale: 0.7 }}
+        initial={{ x: -200, y: 100, scale: 0.7 }}
         whileInView={{ x: 0, scale: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.4 }}
         className="card-item"
         style={{ backgroundColor: '#52C4BC' }}
       >
