@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 
 const Form = () => {
   const formInitial = {
@@ -47,7 +48,7 @@ const Form = () => {
     }
   };
   return (
-    <form className="contact-us-form" onSubmit={handleSubmit}>
+   <motion.form initial={{y:200, opacity:0}} whileInView={{y:0, opacity:1}} transition={{delay:0.2, duration:0.4}} className="contact-us-form" onSubmit={handleSubmit}>
       <div className="input-wrapper">
         <label>
           {' '}
@@ -113,10 +114,14 @@ const Form = () => {
         </label>
       </div>
       {status.message && <p>{status.message}</p>}
-      <button className="contact-us-button" type="submit">
+      <motion.button
+
+        className="contact-us-button"
+        type="submit"
+      >
         <span>{buttonText}</span>
-      </button>
-    </form>
+      </motion.button>
+    </motion.form>
   );
 };
 
