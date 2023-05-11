@@ -31,7 +31,7 @@ function App() {
   useEffect(() => {
     if (window.innerWidth <= 769) {
       window.scrollTo({
-        top: 0,
+        top: blocksRefs[0].current.offsetTop,
         behavior: 'smooth',
       });
       return;
