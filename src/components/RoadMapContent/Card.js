@@ -6,7 +6,7 @@ const Card = () => {
     <motion.article className="card-wrapper">
       <motion.button
         viewport={{once:true}}
-        initial={{ x: -300, y: 200, scale: 0.7 }}
+        initial={{ x: -200, y: 200, scale: 0.7 }}
         whileInView={{ x: 0, scale: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         className="card-item"
@@ -22,7 +22,7 @@ const Card = () => {
       </motion.button>
       <motion.button
         viewport={{once:true}}
-        initial={{ x: -300, y: 200, scale: 0.7 }}
+        initial={{ x: -200, y: 200, scale: 0.7 }}
         whileInView={{ x: 0, scale: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         className="card-item"
@@ -38,7 +38,7 @@ const Card = () => {
       </motion.button>
       <motion.button
         viewport={{once:true}}
-        initial={{ x: -300, y: 200, scale: 0.7 }}
+        initial={{ x: -200, y: 200, scale: 0.7 }}
         whileInView={{ x: 0, scale: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         className="card-item"
@@ -54,7 +54,7 @@ const Card = () => {
       </motion.button>
       <motion.button
         viewport={{once:true}}
-        initial={{ x: -300, y: 200, scale: 0.7 }}
+        initial={{ x: -200, y: 200, scale: 0.7 }}
         whileInView={{ x: 0, scale: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         className="card-item"
