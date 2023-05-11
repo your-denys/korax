@@ -8,7 +8,7 @@ const ServicesComponent = () => {
       // variants={contactAnimation}
       initial={{opacity:0}}
       whileInView={{opacity:1}}
-      viewport={{ amount: 0.3, once: true }}
+      viewport={{ amount: 0.4, once: true }}
       className="services-component"
     >
       <div className="services-wrapper">
