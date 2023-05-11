@@ -40,7 +40,7 @@ function App() {
             window.history.replaceState(
               null,
               null,
-              `#${entry.target.id}`
+              null
             );
           }
         });
