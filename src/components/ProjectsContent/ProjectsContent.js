@@ -15,7 +15,7 @@ const ProjectsContent = () => {
         Projects
       </motion.h2>
       <motion.div
-       viewport={{ amount:0.3, once: true }}
+       viewport={{once: true }}
         initial={{ width: 0 }}
         whileInView={{ width: '100%' }}
         transition={{ duration: 1 }}
@@ -23,7 +23,7 @@ const ProjectsContent = () => {
       ></motion.div>
       <article className="projects-wrapper pt-5">
         <motion.div
-         viewport={{ amount:0.3, once: true }}
+         viewport={{ once: true }}
           initial={{ x: -300, y: 300, scale: 0.7 }}
           whileInView={{ x: 0, scale: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -34,7 +34,7 @@ const ProjectsContent = () => {
           </p>
         </motion.div>
         <motion.div
-         viewport={{ amount:0.3, once: true }}
+         viewport={{once: true }}
           initial={{ x: 300, y: 300, scale: 0.7 }}
           whileInView={{ x: 0, scale: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -45,7 +45,7 @@ const ProjectsContent = () => {
           </p>
         </motion.div>
         <motion.div
-         viewport={{ amount:0.3, once: true }}
+         viewport={{once: true }}
           initial={{ x: -300, y: 300, scale: 0.7 }}
           whileInView={{ x: 0, scale: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -56,7 +56,7 @@ const ProjectsContent = () => {
           </p>
         </motion.div>
         <motion.div
-         viewport={{ amount:0.3, once: true }}
+         viewport={{once: true }}
           initial={{ x: 300, y: 300, scale: 0.7 }}
           whileInView={{ x: 0, scale: 1, y: 0 }}
           transition={{ duration: 0.6 }}
