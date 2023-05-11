@@ -1,21 +1,6 @@
-// import Drag from './Drag';
 import './ServicesComponent.css';
 import arrow from '../../assets/button-arrow.svg';
 import { motion } from 'framer-motion';
-
-const contactAnimation = {
-  hidden: {
-    x: 0,
-    opacity: 0,
-  },
-  visible: {
-    x: 0,
-    opacity: 1,
-    transition: {
-      delay:  0.1,
-    },
-  },
-};
 
 const ServicesComponent = () => {
   return (

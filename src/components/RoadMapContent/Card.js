@@ -20,7 +20,7 @@ const Card = () => {
         </p>
       </motion.button>
       <motion.button
-        initial={{ x: -600, y: 200, scale: 0.7 }}
+        initial={{ x: -300, y: 200, scale: 0.7 }}
         whileInView={{ x: 0, scale: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         className="card-item"
@@ -35,7 +35,7 @@ const Card = () => {
         </p>
       </motion.button>
       <motion.button
-        initial={{ x: -800, y: 200, scale: 0.7 }}
+        initial={{ x: -300, y: 200, scale: 0.7 }}
         whileInView={{ x: 0, scale: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         className="card-item"
@@ -50,7 +50,7 @@ const Card = () => {
         </p>
       </motion.button>
       <motion.button
-        initial={{ x: -1000, y: 200, scale: 0.7 }}
+        initial={{ x: -300, y: 200, scale: 0.7 }}
         whileInView={{ x: 0, scale: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         className="card-item"
