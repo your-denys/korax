@@ -121,6 +121,20 @@ select:focus {
   .blocks-description {
     font-size: 27px;
   }
+  html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.App {
+  height: calc(var(--vh, 1vh) * 100);
+  overflow-y: scroll;
+}
 }
 @media screen and (max-height: 920px) {
   .blocks-description {
