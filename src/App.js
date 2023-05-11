@@ -60,6 +60,7 @@ function App() {
         if (activeBlockIndex < blocksRefs.length - 1) {
           window.scrollTo({
             top: blocksRefs[activeBlockIndex + 1].current.offsetTop,
+            left: 0, 
             behavior: 'smooth',
           });
           setActiveBlockIndex(activeBlockIndex + 1);
