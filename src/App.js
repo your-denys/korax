@@ -9,19 +9,6 @@ import RoadMap from './view/RoadMap/RoadMap';
 import Projects from './view/Projects/Projects';
 import ContactUs from './view/ContactUs/ContactUs';
 
-function scrollToRef(ref) {
-  if (
-    navigator.userAgent.match(/Mobi/i) ||
-    navigator.userAgent.match(/Android/i)
-  ) {
-    window.scrollTo(0, ref.current.offsetTop);
-  } else {
-    window.scrollTo({
-      top: ref.current.offsetTop,
-      behavior: 'smooth',
-    });
-  }
-}
 
 function useBlockRefs() {
   const blocksRefs = [
@@ -40,7 +27,7 @@ function useBlockRefs() {
 function App() {
   const blocksRefs = useBlockRefs();
   const observerRef = useRef(null);
-  const [activeBlockIndex, setActiveBlockIndex] = useState(0);
+  const [activeBlockIndex, setActiveBlockIndex] = useState(null);
 
   useEffect(() => {
     observerRef.current = new IntersectionObserver(
@@ -66,22 +53,28 @@ function App() {
       observerRef.current.observe(ref.current)
     );
 
-   const handleWheel = (event) => {
-    event.preventDefault();
-    const delta = event.deltaY;
+  const handleWheel = (event) => {
+      event.preventDefault();
+      const delta = event.deltaY;
 
-    if (delta > 0) {
-      if (activeBlockIndex < blocksRefs.length - 1) {
-        scrollToRef(blocksRefs[activeBlockIndex + 1]);
-        setActiveBlockIndex(activeBlockIndex + 1);
+      if (delta > 0) {
+        if (activeBlockIndex < blocksRefs.length - 1) {
+          window.scrollTo({
+            top: blocksRefs[activeBlockIndex + 1].current.offsetTop,
+            behavior: 'smooth',
+          });
+          setActiveBlockIndex(activeBlockIndex + 1);
+        }
+      } else if (delta < 0) {
+        if (activeBlockIndex > 0) {
+          window.scrollTo({
+            top: blocksRefs[activeBlockIndex - 1].current.offsetTop,
+            behavior: 'smooth',
+          });
+          setActiveBlockIndex(activeBlockIndex - 1);
+        }
       }
-    } else if (delta < 0) {
-      if (activeBlockIndex > 0) {
-        scrollToRef(blocksRefs[activeBlockIndex - 1]);
-        setActiveBlockIndex(activeBlockIndex - 1);
-      }
-    }
-  };
+    };
 
     window.addEventListener('wheel', handleWheel, { passive: false });
 
@@ -93,6 +86,16 @@ function App() {
   useEffect(() => {
     window.scroll({ top: 0, left: 0, behavior: 'smooth' });
   }, []);
+  useEffect(() => {
+  const setHeight = () => {
+    document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
+  };
+
+  setHeight();
+  window.addEventListener('resize', setHeight);
+
+  return () => window.removeEventListener('resize', setHeight);
+}, []);
 
   return (
     <div className="App">
