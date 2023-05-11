@@ -7,7 +7,7 @@ const ContactUsContent = () => {
   return (
     <section className='contact-us'>
             <motion.h2
-    viewport={{ amount:0.3, once: true }}
+    viewport={{  once: true }}
         initial={{ y: 60, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.1, duration: 0.6 }}
@@ -16,7 +16,7 @@ const ContactUsContent = () => {
         Contact us
       </motion.h2>
       <motion.div
-viewport={{amount:0.3, once: true }}
+viewport={{ once: true }}
         initial={{ width: 0 }}
         whileInView={{ width: '100%' }}
         transition={{ duration: 0.7 }}
