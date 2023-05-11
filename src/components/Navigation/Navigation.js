@@ -2,10 +2,16 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import './Navigation.css';
+import { motion } from 'framer-motion';
+
 
 const Navigation = () => {
   return (
-    <div className='navigation'>
+     <motion.div 
+    initial={{opacity: 0}}
+    animate={{opacity: 1}}
+    transition={{duration:1}}
+    className='navigation'>
       <Container />
       <Nav className="me-auto">
         <Nav.Link href="#services">Services</Nav.Link>
@@ -16,7 +22,7 @@ const Navigation = () => {
         <Nav.Link href="#projects">Projects</Nav.Link>
       </Nav>
       <Container />
-    </div>
+    </motion.div>
   );
 };
 
