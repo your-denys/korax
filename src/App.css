@@ -114,7 +114,10 @@ select:focus {
     font-size: 50px;
   }
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
+  #home {
+    order: -1;
+  }
   .blocks-description {
     font-size: 27px;
   }
