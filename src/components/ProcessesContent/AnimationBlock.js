@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 const AnimationBlock = () => {
   const [description, setDescription] = useState('first');
 
-   return (
+  return (
     <section className="processes-content">
       <article className="processes-title">
         <button
@@ -435,7 +435,6 @@ const AnimationBlock = () => {
         )}
       </article>
     </section>
-  );
   );
 };
 
