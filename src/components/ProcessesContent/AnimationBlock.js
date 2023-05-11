@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './ProcessesContent.css';
+import { motion } from 'framer-motion';
 
 const AnimationBlock = () => {
   const [description, setDescription] = useState('first');
@@ -9,12 +10,18 @@ const AnimationBlock = () => {
       <article className="processes-title">
         <button
           onClick={() => setDescription('first')}
-          className={description === 'first' ? "title-button title-active1" : "title-button"}
-          style={{ color: description === 'first' ? '#52C4BC' : ''}}
+          className={
+            description === 'first'
+              ? 'title-button title-active1'
+              : 'title-button'
+          }
+          style={{ color: description === 'first' ? '#52C4BC' : '' }}
         >
           Lorem, ipsum
           <svg
-            className={description === 'first' ? 'transform-arrow' : ''}
+            className={
+              description === 'first' ? 'transform-arrow' : ''
+            }
             width="57"
             height="35"
             viewBox="0 0 57 35"
@@ -29,12 +36,18 @@ const AnimationBlock = () => {
         </button>
         <button
           onClick={() => setDescription('second')}
-          className={description === 'second' ? "title-button title-active2" : "title-button"}
-          style={{ color: description === 'second' ? '#52C4BC' : ''}}
+          className={
+            description === 'second'
+              ? 'title-button title-active2'
+              : 'title-button'
+          }
+          style={{ color: description === 'second' ? '#52C4BC' : '' }}
         >
           Lorem, ipsum
           <svg
-            className={description === 'second' ? 'transform-arrow': ''}
+            className={
+              description === 'second' ? 'transform-arrow' : ''
+            }
             width="57"
             height="35"
             viewBox="0 0 57 35"
@@ -49,12 +62,18 @@ const AnimationBlock = () => {
         </button>
         <button
           onClick={() => setDescription('third')}
-          className={description === 'third' ? "title-button title-active3" : "title-button"}
+          className={
+            description === 'third'
+              ? 'title-button title-active3'
+              : 'title-button'
+          }
           style={{ color: description === 'third' ? '#52C4BC' : '' }}
         >
           Lorem, ipsum
           <svg
-            className={description === 'third' ? 'transform-arrow' : ''}
+            className={
+              description === 'third' ? 'transform-arrow' : ''
+            }
             width="57"
             height="35"
             viewBox="0 0 57 35"
@@ -69,12 +88,18 @@ const AnimationBlock = () => {
         </button>
         <button
           onClick={() => setDescription('fourth')}
-          className={description === 'fourth' ? "title-button title-active4" : "title-button"}
+          className={
+            description === 'fourth'
+              ? 'title-button title-active4'
+              : 'title-button'
+          }
           style={{ color: description === 'fourth' ? '#52C4BC' : '' }}
         >
           Lorem, ipsum
           <svg
-            className={description === 'fourth' ? 'transform-arrow' : ''}
+            className={
+              description === 'fourth' ? 'transform-arrow' : ''
+            }
             width="57"
             height="35"
             viewBox="0 0 57 35"
@@ -89,12 +114,18 @@ const AnimationBlock = () => {
         </button>
         <button
           onClick={() => setDescription('fifth')}
-          className={description === 'fifth' ? "title-button title-active5" : "title-button"}
+          className={
+            description === 'fifth'
+              ? 'title-button title-active5'
+              : 'title-button'
+          }
           style={{ color: description === 'fifth' ? '#52C4BC' : '' }}
         >
           Lorem, ipsum
           <svg
-            className={description === 'fifth' ? 'transform-arrow' : ''}
+            className={
+              description === 'fifth' ? 'transform-arrow' : ''
+            }
             width="57"
             height="35"
             viewBox="0 0 57 35"
@@ -336,51 +367,71 @@ const AnimationBlock = () => {
       </article>
       <article className="processes-description">
         {description === 'first' && (
-          <div>
+          <motion.div
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8 }}
+          >
             <h2>Lorem, ipsum</h2>
             <p>
               ipsum dolor sit amet, consectetur adipiscing elit. Nunc
               vulputate libero et velit interdum, ac aliquet odio
               mattis.
             </p>
-          </div>
+          </motion.div>
         )}
         {description === 'second' && (
-          <div>
+          <motion.div
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8 }}
+          >
             <h2>Lorem, ipsum</h2>
             <p>
               dolor sit amet, consectetur adipiscing elit. Nunc
               vulputate libero et velit interdum, ac aliquet odio
               mattis.
             </p>
-          </div>
+          </motion.div>
         )}
         {description === 'third' && (
-          <div>
+          <motion.div
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8 }}
+          >
             <h2>Lorem, ipsum</h2>
             <p>
               sit amet, consectetur adipiscing elit. Nunc vulputate
               libero et velit interdum, ac aliquet odio mattis.
             </p>
-          </div>
+          </motion.div>
         )}
         {description === 'fourth' && (
-          <div>
+          <motion.div
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8 }}
+          >
             <h2>Lorem, ipsum</h2>
             <p>
               amet, consectetur adipiscing elit. Nunc vulputate libero
               et velit interdum, ac aliquet odio mattis.
             </p>
-          </div>
+          </motion.div>
         )}
         {description === 'fifth' && (
-          <div>
+          <motion.div
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8 }}
+          >
             <h2>Lorem, ipsum</h2>
             <p>
               consectetur adipiscing elit. Nunc vulputate libero et
               velit interdum, ac aliquet odio mattis.
             </p>
-          </div>
+          </motion.div>
         )}
       </article>
     </section>

@@ -1,19 +1,31 @@
 import './RoadMapContent.css';
+import { motion } from 'framer-motion';
 
 const Card = () => {
-    
   return (
-    <article className='card-wrapper'>
-      <button autoFocus className='card-item' style={{backgroundColor: '#59575A'}}>
+    <motion.article className="card-wrapper">
+      <motion.button
+        initial={{ x: -300, y: 200, scale: 0.7 }}
+        whileInView={{ x: 0, scale: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="card-item"
+        style={{ backgroundColor: '#59575A' }}
+      >
         <span>01</span>
         <h2>Lorem, ipsum</h2>
-        <p >
+        <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           Nunc vulputate libero et velit interdum, ac aliquet odio
           mattis.
-        </p> 
-      </button>
-      <button  className='card-item' style={{backgroundColor: '#0A080B'}}>
+        </p>
+      </motion.button>
+      <motion.button
+        initial={{ x: -600, y: 200, scale: 0.7 }}
+        whileInView={{ x: 0, scale: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="card-item"
+        style={{ backgroundColor: '#0A080B' }}
+      >
         <span>02</span>
         <h2>Lorem, ipsum</h2>
         <p>
@@ -21,8 +33,14 @@ const Card = () => {
           Nunc vulputate libero et velit interdum, ac aliquet odio
           mattis.
         </p>
-      </button>
-      <button  className='card-item' style={{backgroundColor: '#06593B'}}>
+      </motion.button>
+      <motion.button
+        initial={{ x: -800, y: 200, scale: 0.7 }}
+        whileInView={{ x: 0, scale: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="card-item"
+        style={{ backgroundColor: '#06593B' }}
+      >
         <span>03</span>
         <h2>Lorem, ipsum</h2>
         <p>
@@ -30,8 +48,14 @@ const Card = () => {
           Nunc vulputate libero et velit interdum, ac aliquet odio
           mattis.
         </p>
-      </button>
-      <button  className='card-item' style={{backgroundColor: '#52C4BC'}}>
+      </motion.button>
+      <motion.button
+        initial={{ x: -1000, y: 200, scale: 0.7 }}
+        whileInView={{ x: 0, scale: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="card-item"
+        style={{ backgroundColor: '#52C4BC' }}
+      >
         <span>04</span>
         <h2>Lorem, ipsum</h2>
         <p>
@@ -39,8 +63,8 @@ const Card = () => {
           Nunc vulputate libero et velit interdum, ac aliquet odio
           mattis.
         </p>
-      </button>
-    </article>
+      </motion.button>
+    </motion.article>
   );
 };
 

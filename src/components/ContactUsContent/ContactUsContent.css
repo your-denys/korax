@@ -4,9 +4,7 @@
   line-height: 120.6%;
   text-transform: uppercase;
   color: #ffffff;
-  border-bottom: 2px dashed #b8b8b8;
   padding-bottom: 30px;
-  margin-bottom: 150px;
   text-align: center;
 }
 .contact-us-form {
@@ -78,7 +76,7 @@
     gap: 10px;
   }
   .contact-us-button {
-    margin-left: 0;
+    margin-right: auto;
 
   }
 }

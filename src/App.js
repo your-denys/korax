@@ -19,7 +19,7 @@ function useBlockRefs() {
     useRef(null),
     useRef(null),
   ];
-  
+
   return blocksRefs;
 }
 
@@ -45,7 +45,7 @@ function App() {
           }
         });
       },
-      { threshold: 0.5 } 
+      { threshold: 0.5 }
     );
 
     blocksRefs.forEach((ref) =>
@@ -82,6 +82,9 @@ function App() {
       window.removeEventListener('wheel', handleWheel);
     };
   }, [activeBlockIndex, blocksRefs]);
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
 
   return (
     <div className="App">
@@ -97,10 +100,10 @@ function App() {
       {/* <div style={{ height: '100vh' }} ref={blocksRefs[3]} id="works">
         <h2></h2>
       </div> */}
-       <div ref={blocksRefs[3]} id="about-us">
+      <div ref={blocksRefs[3]} id="about-us">
         <AboutUs />
       </div>
-       <div ref={blocksRefs[4]} id="road-map">
+      <div ref={blocksRefs[4]} id="road-map">
         <RoadMap />
       </div>
       <div ref={blocksRefs[5]} id="projects">

@@ -15,7 +15,7 @@
   height: 353px;
   padding: 55px 20px;
   border-radius: 27px;
-  overflow: hidden;
+  /* overflow: hidden; */
   transition: all 1s ease-out;
   outline: none;
 }
@@ -39,7 +39,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  max-width: 60px;
+  max-width: 260px;
   line-height: 18px;
   text-align: left;
   transition: all 1s ease-out;
@@ -47,7 +47,7 @@
   animation: text-hide 1s;
   /* display: none; */
 }
-.card-item:hover p {
+.card-item:focus p {
   /* display: block; */
   opacity: 1;
   max-width: 300px;
@@ -57,7 +57,7 @@
 @keyframes text {
   0% {
     opacity: 0;
-    max-width: 60px;
+    max-width: 260px;
   }
 
   50% {
@@ -79,7 +79,7 @@
     max-width: 300px;
   }
   100% {
-    max-width: 60px;
+    max-width: 260px;
   }
 }
 
@@ -101,78 +101,132 @@
     border-radius: 27px;
 
   }
+   .card-item p {
+
+    max-width: 200px;
+  }
   .roadmap-text-footer {
     padding-top: 100px;
   }
+  .card-item p {
+  max-width: 60px;
+}
+.card-item:focus p {
+
+  max-width: 260px;
+
+}
+@keyframes text {
+  0% {
+    opacity: 0;
+    max-width: 60px;
+  }
+
+  50% {
+    opacity: 0;
+    max-width: 260px;
+  }
+  80% {
+    opacity: 1;
+  }
+}
+@keyframes text-hide {
+  0% {
+    opacity: 1;
+    max-width: 260px;
+  }
+
+  20% {
+    opacity: 0;
+    max-width: 260px;
+  }
+  100% {
+    max-width: 60px;
+  }
+}
 }
 @media screen and (max-width: 768px) {
   .card-wrapper {
-    margin-top: 30px; 
+    margin-top: 30px;
   }
   .card-item {
     height: 160px;
-    padding:  20px;
+    padding: 20px;
     width: 300px;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
   .card-item h2 {
-   
     margin-bottom: 20px;
   }
   .card-item p {
     font-weight: 400;
     font-size: 16px;
     line-height: 18px;
-    max-width: 60px;
+    width: 100%;
     line-height: 18px;
     text-align: left;
     transition: all 1s ease-out;
     opacity: 0;
-    animation: text-hide 1s;
+    animation: text-hide 0.5s;
     /* display: none; */
   }
-  .card-item:focus {
+  .card-item:hover {
     height: 260px;
     outline: none;
   }
-  .card-item:focus p {
+  .card-item:hover p {
     /* display: block; */
     opacity: 1;
     max-width: 260px;
     height: auto;
-    animation: text 1s;
+    animation: text 0.5s;
     outline: none;
   }
   @keyframes text {
     0% {
       opacity: 0;
-      max-width: 60px;
+      height: 160px;
+       width: 260px; 
+       max-width: 260px;
     }
-  
+
     50% {
-      opacity: 0;
-      max-width: 260px;
+      opacity: 0.5;
+      height: 260px;
+       width: 260px; 
+       max-width: 260px;
     }
-    80% {
+    90% {
+      opacity: 0.9;
+ 
+    }
+    100% {
       opacity: 1;
     }
   }
   @keyframes text-hide {
     0% {
       opacity: 1;
-      max-width: 260px;
+      height: 260px;
+       width: 260px; 
+       max-width: 260px;
     }
-  
+
     20% {
-      opacity: 0;
+      opacity: 0.8;
+      height: 260px;
+      width: 260px; 
       max-width: 260px;
     }
+
     100% {
-      max-width: 60px;
+      opacity:0;
+      height: 160px;
+      max-width: 260px;
+      width: 260px; 
     }
   }
   .roadmap-text-footer {
     padding-top: 50px;
   }
 }
-@media screen and (max-height: 991px) {}
