@@ -86,6 +86,11 @@ function App() {
     useEffect(() => {
      window.scroll({ top: 0, left: 0, behavior: 'smooth' });
   }, []);
+  useEffect(() => {
+  if (window.innerWidth <= 768) {
+    setActiveBlockIndex(0);
+  }
+}, []);
 
   return (
     <div className="App">
