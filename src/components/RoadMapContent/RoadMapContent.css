@@ -178,6 +178,7 @@
     /* display: block; */
     opacity: 1;
     max-width: 260px;
+    width: 260px;
     height: auto;
     animation: text 0.5s;
     outline: none;
