@@ -15,7 +15,7 @@ const ServicesComponent = () => {
         <section className="services-content">
           <article className="services-main">
             <motion.h2
-            viewport={{  once: true }}
+            viewport={{ amount: 0.4, once: true }}
               initial={{ x: -200, opacity: 0 }}
               whileInView={{ x:0,opacity:1}}
               transition={{ duration: 0.5 }}
@@ -24,7 +24,7 @@ const ServicesComponent = () => {
               SERVICES
             </motion.h2>
             <motion.img
-             viewport={{  once: true }}
+             viewport={{ amount: 0.4, once: true }}
               initial={{ x: 100, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.5 }}
