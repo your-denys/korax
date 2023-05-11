@@ -57,7 +57,7 @@ const ProjectsContent = () => {
         </motion.div>
         <motion.div
          viewport={{once: true }}
-          initial={{ x: 200, y: 200, scale: 0.7 }}
+          initial={{ x: 150, y: 150, scale: 0.7 }}
           whileInView={{ x: 0, scale: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           className="projects-card card-4"
