@@ -1,8 +1,13 @@
 .blocks-description-border {
-  border-bottom: 2px dashed #b8b8b8;
+  /* border-bottom: 2px dashed #b8b8b8; */
   padding-bottom: 50px;
   padding-top: 20px;
  
+}
+.blocks-description {
+  font-weight: 600;
+font-size: 72px;
+line-height: 120.6%;
 }
 .about-us {
     display: flex;
@@ -38,7 +43,13 @@
         font-size: 19px;
         line-height: 25px;
       }
-      
+   .blocks-description {
+        font-size: 30px;
+      }
+            .blocks-description-border {
+        padding-top: 10px;
+        padding-bottom: 40px;
+      }
 }
 
 @media screen and (max-height: 920px) {
