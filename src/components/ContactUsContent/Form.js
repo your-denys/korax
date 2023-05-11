@@ -25,15 +25,15 @@ const Form = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText('Sending...');
-    let response = await fetch('http://localhost:5000/contact', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json;charset=utf-8',
-      },
-      body: JSON.stringify(formDetails),
-    });
+//     let response = await fetch('http://localhost:5000/contact', {
+//       method: 'POST',
+//       headers: {
+//         'Content-Type': 'application/json;charset=utf-8',
+//       },
+//       body: JSON.stringify(formDetails),
+//     });
     setButtonText('Send message');
-    let result = await response.json();
+//     let result = await response.json();
     setFormDetails(formInitial);
 //     if (result.code === 200) {
 //       setStatus({
