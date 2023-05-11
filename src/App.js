@@ -86,16 +86,6 @@ function App() {
   useEffect(() => {
     window.scroll({ top: 0, left: 0, behavior: 'smooth' });
   }, []);
-  useEffect(() => {
-  const setHeight = () => {
-    document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
-  };
-
-  setHeight();
-  window.addEventListener('resize', setHeight);
-
-  return () => window.removeEventListener('resize', setHeight);
-}, []);
 
   return (
     <div className="App">
