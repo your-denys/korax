@@ -48,7 +48,7 @@ const Form = () => {
     }
   };
   return (
-   <motion.form initial={{y:200, opacity:0}} whileInView={{y:0, opacity:1}} transition={{delay:0.2, duration:0.4}}  viewport={{once: true}} className="contact-us-form" onSubmit={handleSubmit}>
+   <motion.form initial={{y:200, opacity:0}} whileInView={{y:0, opacity:1}} transition={{delay:0.2, duration:0.4}} className="contact-us-form" onSubmit={handleSubmit}>
       <div className="input-wrapper">
         <label>
           {' '}
