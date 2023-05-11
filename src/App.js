@@ -28,7 +28,7 @@ function App() {
   const observerRef = useRef(null);
   const [activeBlockIndex, setActiveBlockIndex] = useState(0);
 
-   useEffect(() => {
+  useEffect(() => {
     observerRef.current = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -40,7 +40,7 @@ function App() {
             window.history.replaceState(
               null,
               null,
-              null
+              `#${entry.target.id}`
             );
           }
         });
@@ -52,7 +52,7 @@ function App() {
       observerRef.current.observe(ref.current)
     );
 
-     const handleWheel = (event) => {
+    const handleWheel = (event) => {
       event.preventDefault();
       const delta = event.deltaY;
 
@@ -75,7 +75,6 @@ function App() {
       }
     };
 
-
     window.addEventListener('wheel', handleWheel, { passive: false });
 
     return () => {
@@ -83,9 +82,9 @@ function App() {
       window.removeEventListener('wheel', handleWheel);
     };
   }, [activeBlockIndex, blocksRefs]);
-
-
-}, []);
+  useEffect(() => {
+    window.scroll({ top: 0, left: 0, behavior: 'smooth' });
+  }, []);
 
   return (
     <div className="App">
