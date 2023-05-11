@@ -12,7 +12,7 @@ const Form = () => {
 
   const [formDetails, setFormDetails] = useState(formInitial);
   const [buttonText, setButtonText] = useState('Send message');
-  const [status, setStatus] = useState({});
+//   const [status, setStatus] = useState({});
 
   const onFormUpdate = (category, value) => {
     setFormDetails({
@@ -35,17 +35,17 @@ const Form = () => {
     setButtonText('Send message');
     let result = await response.json();
     setFormDetails(formInitial);
-    if (result.code === 200) {
-      setStatus({
-        success: true,
-        message: 'We will contact you soon!',
-      });
-    } else {
-      setStatus({
-        success: false,
-        message: 'Something went wrong, please try again later',
-      });
-    }
+//     if (result.code === 200) {
+//       setStatus({
+//         success: true,
+//         message: 'We will contact you soon!',
+//       });
+//     } else {
+//       setStatus({
+//         success: false,
+//         message: 'Something went wrong, please try again later',
+//       });
+//     }
   };
   return (
     <motion.form initial={{y:200, opacity:0}} whileInView={{y:0, opacity:1}} transition={{delay:0.2, duration:0.4}} className="contact-us-form" onSubmit={handleSubmit}>
