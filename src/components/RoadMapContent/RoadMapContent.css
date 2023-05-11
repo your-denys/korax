@@ -197,12 +197,6 @@
        width: 260px; 
        max-width: 260px;
     }
-    90% {
-      opacity: 0.9;
-       width: 260px; 
-       max-width: 260px;
- 
-    }
     100% {
       opacity: 1;
        width: 260px; 
