@@ -9,7 +9,6 @@ import RoadMap from './view/RoadMap/RoadMap';
 import Projects from './view/Projects/Projects';
 import ContactUs from './view/ContactUs/ContactUs';
 
-
 function useBlockRefs() {
   const blocksRefs = [
     useRef(null),
@@ -20,16 +19,23 @@ function useBlockRefs() {
     useRef(null),
     useRef(null),
   ];
-  
+
   return blocksRefs;
 }
 
 function App() {
-  const blocksRefs = useBlockRefs();
+  const blocksRefs = useBlockRefs(0);
   const observerRef = useRef(null);
   const [activeBlockIndex, setActiveBlockIndex] = useState(null);
 
   useEffect(() => {
+    if (window.innerWidth <= 769) {
+      window.scrollTo({
+        top: blocksRefs[0].current.offsetTop,
+        behavior: 'smooth',
+      });
+      return;
+    } else {
     observerRef.current = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -41,7 +47,7 @@ function App() {
             window.history.replaceState(
               null,
               null,
-               `#${entry.target.id}`
+              `#${entry.target.id}`
             );
           }
         });
@@ -53,7 +59,8 @@ function App() {
       observerRef.current.observe(ref.current)
     );
 
-  const handleWheel = (event) => {
+    const handleWheel = (event) => {
+
       event.preventDefault();
       const delta = event.deltaY;
 
@@ -82,8 +89,14 @@ function App() {
       observerRef.current.disconnect();
       window.removeEventListener('wheel', handleWheel);
     };
+    }
   }, [activeBlockIndex, blocksRefs]);
+
   useEffect(() => {
+    if (window.innerWidth <= 769) {
+        
+      return;
+    }
     window.scroll({ top: 0, left: 0, behavior: 'smooth' });
   }, []);
 
@@ -101,16 +114,16 @@ function App() {
       {/* <div style={{ height: '100vh' }} ref={blocksRefs[3]} id="works">
         <h2></h2>
       </div> */}
-       <div ref={blocksRefs[3]} id="about-us">
+      <div ref={blocksRefs[3]} id="about-us">
         <AboutUs />
       </div>
-       <div ref={blocksRefs[4]} id="road-map">
+      <div ref={blocksRefs[4]} id="road-map">
         <RoadMap />
       </div>
       <div ref={blocksRefs[5]} id="projects">
         <Projects />
       </div>
-      <div ref={blocksRefs[6]} id="contact-us">
+      <div ref={blocksRefs[6]} id="contact-us" >
         <ContactUs />
       </div>
     </div>
