@@ -9,6 +9,21 @@ import RoadMap from './view/RoadMap/RoadMap';
 import Projects from './view/Projects/Projects';
 import ContactUs from './view/ContactUs/ContactUs';
 
+function scrollToRef(ref) {
+  if (
+    navigator.userAgent.match(/Mobi/i) ||
+    navigator.userAgent.match(/Android/i)
+  ) {
+    window.scrollTo(0, ref.current.offsetTop);
+  } else {
+    window.scrollTo({
+      top: ref.current.offsetTop,
+      behavior: 'smooth',
+    });
+  }
+}
+
+
 function useBlockRefs() {
   const blocksRefs = [
     useRef(null),
@@ -52,29 +67,22 @@ function App() {
       observerRef.current.observe(ref.current)
     );
 
-    const handleWheel = (event) => {
-      event.preventDefault();
-      const delta = event.deltaY;
+  const handleWheel = (event) => {
+    event.preventDefault();
+    const delta = event.deltaY;
 
-      if (delta > 0) {
-        if (activeBlockIndex < blocksRefs.length - 1) {
-          window.scrollTo({
-            top: blocksRefs[activeBlockIndex + 1].current.offsetTop,
-            left: 0, 
-            behavior: 'smooth',
-          });
-          setActiveBlockIndex(activeBlockIndex + 1);
-        }
-      } else if (delta < 0) {
-        if (activeBlockIndex > 0) {
-          window.scrollTo({
-            top: blocksRefs[activeBlockIndex - 1].current.offsetTop,
-            behavior: 'smooth',
-          });
-          setActiveBlockIndex(activeBlockIndex - 1);
-        }
+    if (delta > 0) {
+      if (activeBlockIndex < blocksRefs.length - 1) {
+        scrollToRef(blocksRefs[activeBlockIndex + 1]);
+        setActiveBlockIndex(activeBlockIndex + 1);
       }
-    };
+    } else if (delta < 0) {
+      if (activeBlockIndex > 0) {
+        scrollToRef(blocksRefs[activeBlockIndex - 1]);
+        setActiveBlockIndex(activeBlockIndex - 1);
+      }
+    }
+  };
 
     window.addEventListener('wheel', handleWheel, { passive: false });
 
